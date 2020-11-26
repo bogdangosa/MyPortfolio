@@ -7,6 +7,8 @@ html{
     color:#fff;
 }
 
+
+/*Reusable*/
 .section{
     padding: 0 5vw;
     min-height: 100vh;
@@ -17,9 +19,30 @@ html{
     font-size: 4rem;
     font-weight: 300;
 }
+
 .Text{
     font-weight: 300;
     font-size: 1.5rem;
+}
+
+.LeftImage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 2rem;
+    bottom: 2rem;
+    background: url('Photos/home_background.jpg') center no-repeat;
+    background-size:  cover;
+}
+
+.RightImage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+    background: url('Photos/home_background.jpg') center no-repeat;
+    background-size:  cover;
 }
 
 
@@ -31,15 +54,22 @@ header{
     padding: 0 5vw;
     height: 6rem;
     position: fixed;
+    z-index: 10;
+    transition: 1s;
 }
 .Nav{
     display: flex;
     list-style-type: none;
 }
 .nav-links{
-    margin-right: 1rem;
+    margin-right: 2rem;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-links:hover{
+    color: #4B8F1A;
 }
 
 .Home{
@@ -74,13 +104,102 @@ header{
     margin-right: 3rem;
     margin-top: 1rem;
 }
-.Image{
+.Work h1{
     width: 100%;
-    height: 100%;
-    position: relative;
-    left: 2rem;
-    bottom: 2rem;
-    background: url('Photos/home_background.jpg') center no-repeat;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.ProjectContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.LeftImageContainer{
+    width: 40%;
+    height: 40vh;
+    background:#4B8F1A;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.RightImageContainer{
+    width: 40%;
+    height: 40vh;
+    background:#4B8F1A;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+.TextContainer{
+    width: 40%;
+    height: 40vh;
+}
+
+.MiniTitle{
+    font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+.TicTacToePhoto{
+    background: url('Photos/MyWork/TicTacToe.png') center no-repeat;
+    background-size:  cover;
+}
+.Template1Photo{
+    background: url('Photos/MyWork/Template1.png') center no-repeat;
+    background-size:  cover;
+}
+.IssueTrackerPhoto{
+    background: url('Photos/MyWork/IssueTracker.png') center no-repeat;
     background-size:  cover;
 }
 
+.Template3Photo{
+    background: url('Photos/MyWork/Template3.png') center no-repeat;
+    background-size:  cover;
+}
+
+.Contact{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ContactContainer{
+    width: 70%;
+    height: 65vh;
+    padding: 2.5vh 5%;
+    background:#2E6B5F;
+    z-index: 2;
+}
+.Underline{
+    width: 60%;
+    height: 2vh;
+    background:#fff;
+}
+
+.InformationContainer{
+    padding-top: 5vh;
+    display: grid;
+    height: 50%;
+}
+.InformationContainer h2{
+    font-weight: 300;
+}
+
+.BackgroundContainer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50vh;
+    background:#4B8F1A;
+}
+
+.ceva{
+    height: 5rem;
+    background: rgba(0,0,0,0.5);
+}
