@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-family: 'Work Sans', sans-serif;
+    color:#fff;
+}
+
+.section{
+    padding: 0 5vw;
+    min-height: 100vh;
+    background: #213039;
+}
+
+.Title{
+    font-size: 4rem;
+    font-weight: 300;
+}
+.Text{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    padding: 0 5vw;
+    height: 6rem;
+    position: fixed;
+}
+.Nav{
+    display: flex;
+    list-style-type: none;
+}
+.nav-links{
+    margin-right: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Photos/home_background.jpg') center no-repeat;
+    background-size:  cover;
+}
+.Home h1{
+    text-transform: uppercase;
+}
+
+.About{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.About h1{
+    margin-bottom: 2rem;
+}
+
+.textSection{
+    width: 40%;
+    height: 70vh;
+}
+.ImageContainer{
+    width: 30%;
+    height: 70vh;
+    background:#4B8F1A;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+.Image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+    background: url('Photos/home_background.jpg') center no-repeat;
+    background-size:  cover;
+}
+
