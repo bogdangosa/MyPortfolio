@@ -258,6 +258,38 @@ header{
     .hamburger{
         display: block;
     }
+
+    .About{
+        flex-direction: column-reverse;
+    }
+    .textSection{
+        width: 80%;
+        height: 40vh;
+        margin: 2rem 0;
+    }
+    .ImageContainer{
+        width: 80%;
+        height: 40vh;
+        margin-top: 5rem;
+    }
+
+
+    .ProjectContainer{
+        flex-direction: column;
+    }
+    .ProjectContainerReverse{
+        flex-direction: column-reverse;
+    }
+    .LeftImageContainer{
+        width: 80%;
+    }
+    .RightImageContainer{
+        width: 80%;
+    }
+    .TextContainer{
+        width: 80%;
+    }
+
 }
 @media(max-width:580px){
     .Title{
@@ -276,7 +308,7 @@ header{
     }
     .MiniText{
         font-weight: 300;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
