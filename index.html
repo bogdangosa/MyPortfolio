@@ -5,41 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Bogdan Gosa</title>
 </head>
-<body>
+<body >
     <header id="Header">
         <h1 id="Logo">Bogdan Gosa</h1>
+        <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>  
+        </div>
         <nav>
             <ul class="Nav">
-                <li class="nav-links">Home</li>
-                <li class="nav-links">About</li>
-                <li class="nav-links">My Work</li>
-                <li class="nav-links">Contact</li>
+                <li><a href="#Home" class="nav-links">Home</a></li>
+                <li><a href="#About" class="nav-links">About</a></li>
+                <li><a href="#Work" class="nav-links">My Work</a></li>
+                <li><a href="#Contact" class="nav-links">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section class="section Home">
+    <section class="section Home" id="Home">
         <h1 class="Title">Hi, I'm Bogdan,</h1>
         <p class="Text">Front-End Web Developer</p>
     </section>
 
-    <section class="section About">
-        <div class="textSection">
+    <section class="section About" id="About">
+        <div class="textSection" data-simplebar>
             <h1 class="Title">About Me</h1>
             <p class="Text">Hi, I'm Bogdan Gosa 
                 I am a passionate, 16 years old,
-                Front-End Web Developer.
-                
+                Front-End Web Developer from Cluj,Roumania. </p> <br>
+            <p class="Text">                
                 Despite the fact I'm still in
-                High School I have 5 years 
-                of C++ and Competitive 
-                Programing experience 
+                High School I am coding since my first year of middle scool,
+                I mostly done competitive programing for my first few years,
+                but after I started high school I started trying other things too.
+                </p> <br>
+
+            <p class="Text">
+                I started by building simple games in C++ with OpenGl and also in Unity.
+                After that I started building apps in Android Studio in Java. And after a while 
+                I decited to try web and this is the programing I enjoyed the most so far. You
+                can find my projects below.
                 
-                </p>
+            </p>
         </div>
         <div class="ImageContainer">
             <div class="RightImage">
@@ -48,29 +61,33 @@
         </div>
             
     </section>
-    <section class="section Work">
+    <section class="section Work" id="Work">
 
         <h1 class="Title">My Work</h1>
 
         <div class="ProjectContainer">
             <div class="LeftImageContainer">
-                <div class="LeftImage Template1Photo">
+                <div class="LeftImage Template1Photo" onclick="window.open('https://bogdangosa.github.io/MicsunelPortofolio');">
 
                 </div>
             </div>
             <div class="TextContainer">
                 <h2 class="MiniTitle">Portfolio Template</h2>
-                <p>In this project I created a portfolio template to test my PSD to HTML & CSS skills. I googled free website design, got one that i liked and built it in HTML CSS. </p>
+                <p class="MiniText">In this project I created a portfolio template to test my PSD to HTML & CSS skills.
+                     I got a free website design from the internet and started building it in HTML and CSS.
+                     I also added a hamburger menu with a nice animation.It's a simple project but it turned out pretty well</p>
             </div>
         </div>
 
         <div class="ProjectContainer">
             <div class="TextContainer">
                 <h2 class="MiniTitle">Tic Tac Toe Game</h2>
-                <p>In this project I created a simple Tic Tac Toe game to test my JavaScript skills. </p>
+                <p class="MiniText">In this project I created a simple Tic Tac Toe game to test my JavaScript skills.
+                    In this project i got better at the Javascript language.
+                </p>
             </div>
             <div class="RightImageContainer">
-                <div class="RightImage  TicTacToePhoto">
+                <div class="RightImage  TicTacToePhoto" onclick="window.open('https://bogdangosa.github.io/TicTacToe'); " >
 
                 </div>
             </div>
@@ -78,15 +95,17 @@
 
         <div class="ProjectContainer">
             <div class="LeftImageContainer">
-                <div class="LeftImage Template3Photo">
+                <div class="LeftImage Template3Photo" onclick="window.open('https://bogdangosa.github.io/PandaLand');">
 
                 </div>
             </div>
             <div class="TextContainer">
                 <h2 class="MiniTitle">Panda Landing Page</h2>
-                <p>In this project I created another landing
+                <p class="MiniText">In this project I created another landing
                     page template with bootstrap 4 so I can
-                    see how bootstrap works.  
+                    see how bootstrap works. I also added some nice
+                    scroll subtle animations that give the website more life.
+                    Also this time the design was built by me.
                 </p>
             </div>
         </div>
@@ -94,13 +113,14 @@
         <div class="ProjectContainer">
             <div class="TextContainer">
                 <h2 class="MiniTitle">Issue Traker</h2>
-                <p>In this project I made an Issue tracker in
+                <p class="MiniText">In this project I made an Issue tracker in
                     JavaScript for learning purpses, this 
                     being the second JavaScript Project for 
-                    me</p>
+                    me.I understaned how to get the input of a form in Javascript,
+                    and displaying it back into a list.It was a fun project and i leart a lot from it</p>
             </div>
             <div class="RightImageContainer">
-                <div class="RightImage IssueTrackerPhoto">
+                <div class="RightImage IssueTrackerPhoto" onclick="window.open('https://bogdangosa.github.io/IssueTracker');">
 
                 </div>
             </div>
@@ -108,14 +128,14 @@
 
     </section>
 
-    <section class="section Contact">
+    <section class="section Contact" id="Contact">
         <div class="ContactContainer">
             <h1 class="Title">Contact Me</h1>
             <div class="Underline"></div>
             <div class="InformationContainer">
-                <h2>Email:</h2>
-                <h2>Phone:</h2>
-                <h2>GitHub:</h2>
+                <h2>Email:   gosabogdan05@gmail.com</h2>
+                <h2>Phone:   0744 194 407</h2>
+                <h2>GitHub Here</h2>
             </div>
         </div>
 
@@ -124,6 +144,6 @@
         </div>
 
     </section>
-
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 </html>
