@@ -65,7 +65,7 @@ header{
     display: flex;
     list-style-type: none;
 }
-.nav-links{
+.nav-link{    position: relative;
     margin-right: 2rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -74,8 +74,21 @@ header{
     transition: 0.5s;
 }
 
-.nav-links:hover{
-    color: #4B8F1A;
+.nav-link:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background:#fff;
+    transform: translateX(-50%) scaleX(0);
+    transition: 0.5s;
+}
+
+
+.nav-link:hover:after{
+    transform: translateX(-50%) scaleX(1);
 }
 
 .hamburger{
@@ -89,6 +102,7 @@ header{
     height: 2px;
     background:#fff;
     margin-bottom: 8px;
+    transition: 1s;
 }
 
 .Home{
@@ -232,10 +246,9 @@ header{
     background:#fff;
 }
 
-.InformationContainer{
+.ContactText{
     padding-top: 5vh;
-    display: grid;
-    height: 50%;
+    padding-right: 5vw;
 }
 .InformationContainer h2{
     font-weight: 300;
@@ -252,11 +265,27 @@ header{
 
 @media(max-width:700px){
     .Nav{
-        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5rem;
+        padding: 0 1rem;
+        top: 0;
+        right: -30vw;
+        height: 50vh;
+        width: 20vw;
+        background: rgba(0,0,0,0.5);
+        transition: 1s;
+        
+    }
+    .nav-link{
+        margin-right: 0;
     }
     
     .hamburger{
         display: block;
+        z-index: 3;
     }
 
     .About{
@@ -315,4 +344,32 @@ header{
 .transparent{
     height: 5rem;
     background: rgba(0,0,0,0.5);
+}
+
+.active{
+    color: #4B8F1A;
+}
+
+.Show{
+    right: 0;
+}
+
+.Change .line1{
+    transform: rotate(-45deg) translate(-8px,6px);
+}
+.Change .line2{
+    opacity: 0;
+}
+
+.Change .line3{
+    transform: rotate(45deg) translate(-8px,-6px);
+}
+
+.FadeInAnimation{
+    opacity: 0;
+}
+
+.FadeInAnimationFinal{
+    opacity: 1;
+    transition: opacity 1s ease;
 }
