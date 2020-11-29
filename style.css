@@ -65,7 +65,8 @@ header{
     display: flex;
     list-style-type: none;
 }
-.nav-link{    position: relative;
+.nav-link{    
+    position: relative;
     margin-right: 2rem;
     text-transform: uppercase;
     text-decoration: none;
